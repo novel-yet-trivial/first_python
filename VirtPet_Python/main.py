@@ -20,13 +20,14 @@ def mainScreen():
     tLabel.place(x=250 , y=25, anchor="center")
     
     # Loop through the index of the animated gif
-    frame2 = [PhotoImage(file='images/ball-1.gif', format = 'gif -index %i' %(i)) for i in range(0, 100)]
+    frame2 = [PhotoImage(file='images/ball-1.gif', format = 'gif -index %i' %i) for i in range(100)]
     
     def update(ind):
+
         frame = frame2[ind]
         ind += 1
         img.configure(image=frame)
-        root.after(100, update, ind)
+        ms.after(100, update, ind)
 
     img = Label(ms)
     img.place(x=250, y=250, anchor="center")
