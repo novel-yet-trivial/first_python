@@ -1,4 +1,4 @@
-# Welcome to Creacher Keeper
+# Welcome to Creature Keeper
 # Python 3 code
 
 from tkinter import *
