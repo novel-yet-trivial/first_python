@@ -18,7 +18,8 @@ def mainScreen():
     # Placement of items in window
     tLabel = Label(ms, text="Creature Keeper | Dev Edition", font=("Gill Sans", 28), bg="grey")
     tLabel.place(x=250 , y=25, anchor="center")
-
+    
+    # Loop through the index of the animated gif
     frame2 = [PhotoImage(file='images/ball-1.gif', format = 'gif -index %i' %(i)) for i in range(0, 100)]
     
     def update(ind):
